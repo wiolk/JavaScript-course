@@ -1,11 +1,11 @@
-// the first alert
-alert("Hello,World!");
+var youLikeMeat = true;
+var myNum = 8;
 
+if (youLikeMeat){
 
-/* Summary : 
-JS is case sensitive
-semicolon on ending
-not sensitive to whitespace
-oneline comment //
-multi comment like in CSS
-runs from top to bottom */ 
+    document.write("you like meat");
+
+} else{
+    document.write("you hate meat")
+
+}
