@@ -1,34 +1,20 @@
+/* var myPastDate = new Date(1545, 11, 2, 10, 30, 15);
+var myFutureDate = new Date(2515, 0, 31, 10, 30, 15);
 
-var myCar = {
+console.log(myPastDate);
+console.log(myFutureDate); */
 
-    maxSpeed: 70, 
-    driver: "Cat Woman", 
-    drive: function(speed, time){
-        console.log(speed * time);
-    },
-    logDriver: function(){
-        console.log("driver name is " + this.driver);
-    }
-};
+var birthday = new Date(1994, 2, 17, 16, 30, 23);
+var birthday2 = new Date(1994, 2, 17, 16, 30, 23);
 
-var Car = function(maxSpeed, driver){
+console.log(birthday.getTime());
 
-    this.maxSpeed = maxSpeed;
-    this.driver = driver;
-    this.drive = function(speed, time){
-        console.log(speed * time);
-    };
-    this.logDriver = function(){
-        console.log("driver name is " + this.driver);
-    };
+if(birthday.getTime() == birthday2.getTime()){
+
+    console.log("birthdays are equal");
+
+} else{
+
+    console.log("birthdays are not equal");
 
 }
-
-var myCar = new Car(70, "Ninja Man");
-var myCar2 = new Car(30, "dog Man");
-var myCar3 = new Car(80, "P Man");
-var myCar4 = new Car(40, "Spider Man");
-
-myCar.drive(30,5);
-myCar3.logDriver();
-
